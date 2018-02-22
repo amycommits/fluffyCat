@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @production_company.name %>
+</p>
+
+<p>
+  <strong>Website:</strong>
+  <%= @production_company.website %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @production_company.address %>
+</p>
+
+<%= link_to 'Edit', edit_production_company_path(@production_company) %> |
+<%= link_to 'Back', production_companies_path %>
