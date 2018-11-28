@@ -1,8 +1,15 @@
 import React, {Component, Fragment} from "react"
 import PropTypes from "prop-types"
+import ClassNames from 'classnames'
 import VideoControl from "./VideoControl"
 
 export default class Video extends Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      play: 'paused'
+    }
+  }
   render() {
     return (
       <Fragment>
